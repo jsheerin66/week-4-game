@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">Crystals Collector!</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body"> You will be given a random number at the start of the game. <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br>The value of each crystal is hidden from you until you click on it. <br>Each time when the game starts, the game will chage the value of each crystal.
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-4">randomNumber: <span id="randomNumber"></span></div>
+                <div class="col-sm-4">winCount: <span id="winCount"></span></div>
+                <div class="col-sm-4">lossCount: <span id="lossCount"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttonHolder">
+        <button type="button" id="ruby" class="btn btn-primary crystal">ruby </button>
+        <button type="button" id="diamond" class="btn btn-primary crystal">diamond </button>
+        <button type="button" id="amber" class="btn btn-primary crystal">amber</button>
+        <button type="button" id="emerald" class="btn btn-primary crystal">emerald </button>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">Your total score is:<span id="userScore"></span> </div>
+    </div>
+    <!-- <form action="">
+  <input type="button" value="7">
+  <input type="button" value="11">
+  <input type="button" value="8">
+  <input type="button" value="12"><br> -->
+    <!-- </form> -->
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+#buttonHolder {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+}
+
+@keyframes changingColors {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+
+}
+
+@keyframes changingColors2 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+
+}
+
+.crystal {
+    animation-name: changingColors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.jumbotron{
+  animation-name: changingColors2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
